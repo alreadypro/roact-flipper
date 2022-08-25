@@ -2,7 +2,11 @@ local Flipper = require(script.Parent.Parent.Flipper)
 
 local useGoal = require(script.Parent.useGoal)
 
-local function useLinear(hooks, targetValue, options)
+export type LinearOptions = {
+	velocity: number?,
+}
+
+local function useLinear(hooks, targetValue: number, options: LinearOptions?)
 	return useGoal(hooks, Flipper.Linear.new(targetValue, options))
 end
 

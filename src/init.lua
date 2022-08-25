@@ -5,6 +5,7 @@ local useGoal = require(script.useGoal)
 local useInstant = require(script.useInstant)
 local useSpring = require(script.useSpring)
 local useLinear = require(script.useLinear)
+local useTween = require(script.useTween)
 
 return {
 	getBinding = getBinding,
@@ -14,4 +15,5 @@ return {
 	useInstant = useInstant,
 	useSpring = useSpring,
 	useLinear = useLinear,
+	useTween = useTween,
 }

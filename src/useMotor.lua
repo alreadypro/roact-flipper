@@ -1,6 +1,6 @@
 local Flipper = require(script.Parent.Parent.Flipper)
 
-local function createMotor(initialValue)
+local function createMotor(initialValue: (number | { number })?)
 	local initialValueType = type(initialValue)
 	if initialValueType == "number" then
 		return Flipper.SingleMotor.new(initialValue)
